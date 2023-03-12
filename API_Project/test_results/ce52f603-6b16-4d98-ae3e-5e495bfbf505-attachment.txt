@@ -1,0 +1,37 @@
+POST method
+https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+{"status":"OK","place_id":"2fef6534c8f51b8a8f58b8cc21ee5c5f","scope":"APP","reference":"25392ce42ba58a6c9fa2a67c48012c7425392ce42ba58a6c9fa2a67c48012c74","id":"25392ce42ba58a6c9fa2a67c48012c74"}
+Passed! Status code: 200
+Checking for the presence of fields was successful
+status is true!
+GET (POST) method
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=2fef6534c8f51b8a8f58b8cc21ee5c5f
+{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"29, side layout, cohen 09","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+Passed! Status code: 200
+Checking for the presence of fields was successful
+address is true!
+PUT method
+https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123
+{"msg":"Address successfully updated"}
+Passed! Status code: 200
+Checking for the presence of fields was successful
+msg is true!
+GET (PUT) method
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=2fef6534c8f51b8a8f58b8cc21ee5c5f
+{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"100 Lenina street, RU","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+Passed! Status code: 200
+Checking for the presence of fields was successful
+address is true!
+DELETE method
+https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+{"status":"OK"}
+Passed! Status code: 200
+Checking for the presence of fields was successful
+status is true!
+GET (DELETE) method
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=2fef6534c8f51b8a8f58b8cc21ee5c5f
+{"msg":"Get operation failed, looks like place_id  doesn't exists"}
+Passed! Status code: 404
+Checking for the presence of fields was successful
+Word: failed is present!
+Testing of creating, changing and deleting a new location was successful!
