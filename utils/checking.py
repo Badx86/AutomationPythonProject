@@ -3,7 +3,7 @@ import json
 from requests import Response
 
 
-class Checking():
+class Checking:
     """method for checking code status"""
 
     @staticmethod
@@ -34,7 +34,9 @@ class Checking():
     """method for checking the values of required fields in the request response for a given word"""
 
     @staticmethod
-    def check_check_json_search_word_in_value(response: Response, field_name, search_word):
+    def check_check_json_search_word_in_value(
+        response: Response, field_name, search_word
+    ):
         check = response.json()
         check_info = check.get(field_name)
         if search_word in check_info:
